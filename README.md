@@ -1,11 +1,4 @@
-# E-Waste Project
-
-E-waste collection sources: 
- - https://xp-pen.co.in/pages/e-waste-collection
- - https://www.ewri.in/epri-service/#centres
-
-Dataset sources:
- - https://www.kaggle.com/datasets/akshat103/e-waste-image-dataset
+# Dance gesture recognition with YOLOv8
 
 ## Requirements
 
