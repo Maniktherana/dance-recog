@@ -1,0 +1,22 @@
+{
+  "name": "e-waste-project",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": ["packages/*", "apps/*"],
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev --parallel",
+    "lint": "turbo lint",
+    "format": "turbo format",
+    "prepare": "bun install --ignore-scripts",
+    "postinstall": "cd apps/yolo && poetry install",
+    "shadcn": "cd packages/ui && bun shadcn"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@repo/typescript-config": "workspace:*",
+    "turbo": "^2.3.0",
+    "typescript": "5.5.4"
+  },
+  "packageManager": "bun@1.2.2"
+}
