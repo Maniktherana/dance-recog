@@ -51,7 +51,7 @@ export default function VideoStream({ onError }: VideoStreamProps) {
   });
 
   const setupWebSocket = () => {
-    const wsUrl = `ws://127.0.0.1:5005/localonly/ws/detections`;
+    const wsUrl = `ws://127.0.0.1:5005/ws/detections`;
     console.log(`Attempting WebSocket connection to: ${wsUrl}`);
 
     setDebugInfo((prev) => ({
