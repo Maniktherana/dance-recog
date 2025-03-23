@@ -16,7 +16,7 @@ logger = setup_logger()
 router = APIRouter()
 
 
-@router.websocket("/localonly/ws/detections")
+@router.websocket("/ws/detections")
 async def localonly_websocket_detections(websocket: WebSocket):
     """
     WebSocket endpoint for local-only processing using client-sent frames.

@@ -5,7 +5,7 @@ import os
 
 from utils.logger import setup_logger
 from core.model import get_model
-from routers import index, websocket, localonly, file_upload
+from routers import index, file_upload, websockets
 from utils.webrtc_utils import cleanup_peer_connections
 
 logger = setup_logger()
@@ -37,8 +37,7 @@ def create_application() -> FastAPI:
     get_model()
 
     app.include_router(index.router)
-    app.include_router(websocket.router)
-    app.include_router(localonly.router)
+    app.include_router(websockets.router)
     app.include_router(file_upload.router)
 
     # Shutdown event handler
